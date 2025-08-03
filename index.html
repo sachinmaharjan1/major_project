@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vending Machine</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header class="header">
+  <div class="brand">LphaVend</div>
+  <div class="machine-info">LphaVend Vending Machine - 6/10/2025 - 4:08 PM</div>
+  <div style="position: relative;">
+   <div class="cart-wrapper" onclick="goToCart()">
+  <i class="fas fa-shopping-cart cart-icon"></i>
+  <span class="cart-count" id="cartCount">0</span>
+</div>
+<div id="notification" class="notification">Item added</div>
+
+  </div>
+</header>
+
+
+  <nav class="tabs">
+    <button onclick="filterCategory('chocolate')">Chocolate</button>
+    <button onclick="filterCategory('noodle')" class="active">Noodle</button>
+    <button onclick="filterCategory('soap')">Soap</button>
+    <button onclick="filterCategory('juice')">Juice</button>
+    <button onclick="filterCategory('biscuit')">Biscuit</button>
+    <button onclick="filterCategory('others')">Others</button>
+  </nav>
+
+  <main class="product-grid" id="productGrid">
+    <!-- JavaScript will inject product cards here -->
+  </main>
+
+  <div id="notification" class="notification">Item added to cart</div>
+  <button id="adminBtn" onclick="openAdmin()" 
+  style="position: absolute; top: 0; left: 0; width: 30px; height: 30px; 
+         background: red; opacity: 0.5; z-index: 9999;">
+</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
