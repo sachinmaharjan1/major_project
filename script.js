@@ -19,7 +19,7 @@ async function fetchProducts(category = "chocolate") {
   }
 }
 
-function loadProducts(category = "noodle") {
+function loadProducts(category = "chocolate") {
   const grid = document.getElementById("productGrid");
   grid.innerHTML = "";
 
@@ -146,7 +146,7 @@ function updateCartCount() {
 }
 
 function openAdmin() {
-  window.open('admin.html', '_blank');
+  window.open('adminDashboard.html', '_blank');
 }
 
 document.addEventListener('keydown', (e) => {

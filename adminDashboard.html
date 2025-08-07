@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Product Dashboard</title>
+  <link rel="stylesheet" href="adminDashboard.css"/>
+</head>
+<body>
+     <div class="buttons">
+
+    <div class="back-btn-container">
+    <button onclick="window.location.href='index.html'" class="back-btn">
+  ← Back 
+</button>
+</div>
+
+  <h1>Products Dashboard</h1>
+
+  
+
+  <div class="add-product-container">
+  <button class="add-product-btn" onclick="addProduct()">+ Add Product</button>
+</div>
+</div>
+
+  <div class="dashboard-container">
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody">
+        <!-- Products will be loaded here -->
+      </tbody>
+    </table>
+  </div>
+
+    <script src="adminDashboard.js"></script>
+</body>
+</html>
